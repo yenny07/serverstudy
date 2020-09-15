@@ -13,7 +13,7 @@ module.exports = {
         console.log(junhyeon)
         console.log(yein)
         console.log(token)
-        const person = await StudyModel.studyPerson(yein)
+        const person = await StudyModel.studyPerson(id)
 
         res.status(200).send(person)
     },

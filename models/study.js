@@ -3,7 +3,7 @@ const table = 'study';
 
 const study = {
     studyPerson: async (id) => {
-        const query = `SELECT pname, part FROM ${table} WHERE id = ${id}`;
+        const query = `SELECT name, part FROM ${table} WHERE id = ${id}`;
         try{
             const result = await pool.queryParamArr(query);
             console.log(result)
